@@ -1,0 +1,25 @@
+<h3>Movie List</h3>
+<div class="container">
+  <table class="table table-striped"> 
+    <thead>
+      <th>id</th>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Status</th>
+      <th>Operation</th>
+   </thead>
+  <tbody>
+    <tr *ngFor="let list of movies">
+      <td>{{list.movie_id}}</td>
+      <td>{{list.movie_title}}</td>
+      <td>{{list.movie_category}}</td>
+      <td>{{list.movie_status}}</td>
+      <td> 
+      <button class="btn btn-primary" (click)="updateMovie(list)">Edit</button>
+      </td>
+   </tr>
+  </tbody>
+</table>
+<button class="btn btn-primary" (click)="newMovie()">New Movie</button>
+
+</div>

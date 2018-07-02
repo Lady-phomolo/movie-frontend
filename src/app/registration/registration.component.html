@@ -1,0 +1,20 @@
+<h3>Register</h3>
+<form>
+  <div class="form-group">
+    <label for="username">UserName</label>
+    <input class="form-control" type="text" name="username" [(ngModel)]="username" placeholder="username">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input class="form-control" type="email" name="email" [(ngModel)]="email" placeholder="email">
+  </div>
+
+  <div class="form-group">
+    <label for="password">UserName</label>
+    <input class="form-control" type="password" name="password" [(ngModel)]="password" placeholder="password">
+  </div>
+  <button type="submit"  class="btn btn-primary" (click)="onSubmitRegistration()">Sign Up</button>
+  &nbsp;&nbsp;&nbsp;
+  <button  type="submit" class="btn btn-default" (click)="onloginSubmit()" >Login</button>
+</form>

@@ -1,0 +1,24 @@
+<h3>Edit Movie </h3>
+<div class="container">
+  <form (ngSubmit)="processForm()">
+    <div class="form group">
+      <input type="text" name="movie_id" class="form-control" [(ngModel)]="movie.movie_id">
+    </div>
+    <div class="form group">
+      <label for="title">Title</label>
+      <input type="text" name="title" class="form-control" [(ngModel)]="movie.movie_title">
+    </div>
+    <div class="form group">
+      <label for="category">Category</label>
+      <input type="text" name="category" class="form-control" [(ngModel)]="movie.movie_category">
+    </div>
+    <div class="form group">
+      <label for="status">Status</label>
+      <input type="text" name="status" class="form-control" [(ngModel)]="movie.movie_status">
+    </div>
+  
+  <br>
+    <input type="Submit" value="save" class="btn btn-success">
+  </form>
+
+</div>
